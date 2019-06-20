@@ -39,6 +39,18 @@ Route::post('/registering', [
     'as' => 'register', 'uses' => '\App\Http\Controllers\Auth\RegisterController@register'
 ]);
 
+Route::get('/registration', [
+    'as' => 'reg', 'uses' => '\App\Http\Controllers\BluePrintController@index'
+]);
+
+Route::get('/registration/form', [
+    'as' => 'reg', 'uses' => '\App\Http\Controllers\BluePrintController@form'
+]);
+
+Route::get('/get/space/{id}', [
+    'as' => 'get_space', 'uses' => '\App\Http\Controllers\BluePrintController@get_space'
+]);
+
 Route::post('/save/invoice/', [
     'as' => 'submit.invoice', 'uses' => '\App\Http\Controllers\InvoiceController@saveInvoice'
 ]);
