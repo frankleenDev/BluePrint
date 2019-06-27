@@ -20,7 +20,7 @@
 <body class="text-center">
 
 	 <div class="col-md-12">	
-
+	 <center>
 	 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-3">
 	 		 	
 	 	<table style="font-size:10px;" class="table  mt-5">
@@ -33,7 +33,7 @@
             
             	  @if( $oms->category == 'OM' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a data-toggle="confirmation" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -50,7 +50,7 @@
             
             	  @if( $oms->category == 'NG' && $oms->row == '1' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -68,7 +68,7 @@
             
             	  @if( $oms->category == 'R' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -100,7 +100,7 @@
             
             	  @if( $oms->category == 'NG' && $oms->row == '2' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -127,7 +127,7 @@
             
             	  @if( $oms->category == 'NG' && $oms->row == '3' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -148,7 +148,7 @@
             
             	  @if( $oms->category == 'EA' && $oms->row == '3' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -174,7 +174,7 @@
             
             	  @if( $oms->category == 'EA' && $oms->row == '4' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -196,7 +196,7 @@
             
             	  @if( $oms->title == 'AC5' && $oms->row == '5' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -217,7 +217,7 @@
             
             	  @if( $oms->title == 'AC6' && $oms->row == '5' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -235,7 +235,7 @@
 		            	  @if( $oms->category == 'TC' && $oms->row == '5' )
 
 
-			 				<small  <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+			 				<small  <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 			 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 			 						{!! $oms->title !!}
@@ -260,7 +260,7 @@
             
             	  @if( $oms->category == 'S' && $oms->row == '5' )
 
-	 				<td colspan="2" rowspan="1" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="2" rowspan="1" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -281,7 +281,7 @@
             
             	  @if( $oms->category == 'EA' && $oms->row == '5' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -304,7 +304,7 @@
             
             	  @if( $oms->title == 'AC3' && $oms->row == '6' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -325,7 +325,7 @@
             
             	  @if( $oms->title == 'AC4' && $oms->row == '6' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -343,7 +343,7 @@
 		            	  @if( $oms->category == 'TC' && $oms->row == '6' )
 
 
-			 				<small  <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+			 				<small  <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 			 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 			 						{!! $oms->title !!}
@@ -365,7 +365,7 @@
             
             	  @if( $oms->category == 'S' && $oms->row == '6' )
 
-	 				<td colspan="2" rowspan="1" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="2" rowspan="1" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -386,7 +386,7 @@
             
             	  @if( $oms->category == 'EA' && $oms->row == '6' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -409,7 +409,7 @@
             
             	  @if( $oms->title == 'AC1' && $oms->row == '7' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -430,7 +430,7 @@
             
             	  @if( $oms->title == 'AC2' && $oms->row == '7' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -448,7 +448,7 @@
 		            	  @if( $oms->category == 'TC' && $oms->row == '7' )
 
 
-			 				<small  <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+			 				<small  <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 			 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 			 						{!! $oms->title !!}
@@ -469,7 +469,7 @@
             
             	  @if( $oms->category == 'S' && $oms->row == '7' )
 
-	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -490,7 +490,7 @@
             
             	  @if( $oms->category == 'EA' && $oms->row == '7' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -514,7 +514,7 @@
             
             	  @if( $oms->category == 'EA' && $oms->row == '8' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!}
@@ -538,7 +538,7 @@
             
             	  @if( $oms->title == 'M4' && $oms->row == '8' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -557,7 +557,7 @@
             
             	  @if( $oms->title == 'M1' || $oms->title == 'M7' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -587,7 +587,7 @@
             
             	  @if( $oms->title == 'M5' && $oms->row == '9' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -606,7 +606,7 @@
             
             	  @if( $oms->title == 'M2' || $oms->title == 'M8' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -635,7 +635,7 @@
             
             	  @if( $oms->title == 'M6' && $oms->row == '10' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -654,7 +654,7 @@
             
             	  @if( $oms->title == 'M3' && $oms->row == '10' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -680,7 +680,7 @@
             
             	  @if( $oms->title == 'H1' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -701,7 +701,7 @@
             
             	  @if( $oms->title == 'E1' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -719,7 +719,7 @@
             
             	  @if( $oms->category == 'P' && $oms->row == '11' )
 
-	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -740,7 +740,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '11' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -761,7 +761,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '11' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -783,7 +783,7 @@
             
             	  @if( $oms->title == 'H2' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -804,7 +804,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '12')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -827,7 +827,7 @@
             
             	  @if( $oms->title == 'E2' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -848,7 +848,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '12' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -870,7 +870,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '12' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -892,7 +892,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '12' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -914,7 +914,7 @@
             
             	  @if( $oms->title == 'H3' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -935,7 +935,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '13')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -958,7 +958,7 @@
             
             	  @if( $oms->title == 'E3' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -977,7 +977,7 @@
             
             	  @if( $oms->title == 'P2' )
 
-	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -998,7 +998,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '13' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1020,7 +1020,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '13' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1042,7 +1042,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '13' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1064,7 +1064,7 @@
             
             	  @if( $oms->title == 'H4' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1085,7 +1085,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '14')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1108,7 +1108,7 @@
             
             	  @if( $oms->title == 'E4' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1131,7 +1131,7 @@
             
             	  @if( $oms->category == 'AF' )
 
-	 				<td colspan="3" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="3" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1152,7 +1152,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '14' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1174,7 +1174,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '14' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1196,7 +1196,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '14' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1218,7 +1218,7 @@
             
             	  @if( $oms->title == 'H5' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1239,7 +1239,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '15')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1262,7 +1262,7 @@
             
             	  @if( $oms->title == 'E5' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1281,7 +1281,7 @@
             
             	  @if( $oms->title == 'P3' )
 
-	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1304,7 +1304,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '15' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1326,7 +1326,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '15' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1348,7 +1348,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '15' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1370,7 +1370,7 @@
             
             	  @if( $oms->title == 'H6' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1391,7 +1391,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '16')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1414,7 +1414,7 @@
             
             	  @if( $oms->title == 'E6' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1436,7 +1436,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '16' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1458,7 +1458,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '16' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1480,7 +1480,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '16' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1502,7 +1502,7 @@
             
             	  @if( $oms->title == 'H7' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1523,7 +1523,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '17')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1546,7 +1546,7 @@
             
             	  @if( $oms->title == 'E7' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1564,7 +1564,7 @@
             
             	  @if( $oms->title == 'P4' )
 
-	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1586,7 +1586,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '17' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1608,7 +1608,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '17' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1630,7 +1630,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '17' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1652,7 +1652,7 @@
             
             	  @if( $oms->title == 'H8' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1680,7 +1680,7 @@
             
             	  @if( $oms->title == 'E8' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1702,7 +1702,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '18' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1723,7 +1723,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '18' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1744,7 +1744,7 @@
             
             	  @if( $oms->title == 'H9' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1772,7 +1772,7 @@
             
             	  @if( $oms->title == 'E9' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1790,7 +1790,7 @@
             
             	  @if( $oms->title == 'P5' )
 
-	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td colspan="2" rowspan="2" <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1812,7 +1812,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '19' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1833,7 +1833,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '19' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1855,7 +1855,7 @@
             
             	  @if( $oms->title == 'H10' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1876,7 +1876,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '20')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1899,7 +1899,7 @@
             
             	  @if( $oms->title == 'E10' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -1921,7 +1921,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '20' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1943,7 +1943,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '20' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1965,7 +1965,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '20' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -1987,7 +1987,7 @@
             
             	  @if( $oms->title == 'H11' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2008,7 +2008,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '21')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2031,7 +2031,7 @@
             
             	  @if( $oms->title == 'E11' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2053,7 +2053,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '21' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2075,7 +2075,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '21' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2097,7 +2097,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '21' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2119,7 +2119,7 @@
             
             	  @if( $oms->title == 'H12' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2140,7 +2140,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '22')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2163,7 +2163,7 @@
             
             	  @if( $oms->title == 'E12' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2185,7 +2185,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '22' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2207,7 +2207,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '22' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2229,7 +2229,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '22' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2251,7 +2251,7 @@
             
             	  @if( $oms->title == 'H13' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2272,7 +2272,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '23')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2295,7 +2295,7 @@
             
             	  @if( $oms->title == 'E13' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2317,7 +2317,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '23' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2339,7 +2339,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '23' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2361,7 +2361,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '23' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2383,7 +2383,7 @@
             
             	  @if( $oms->title == 'H14' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2404,7 +2404,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '24')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2427,7 +2427,7 @@
             
             	  @if( $oms->title == 'E14' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2449,7 +2449,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '24' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2471,7 +2471,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '24' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2493,7 +2493,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '24' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2515,7 +2515,7 @@
             
             	  @if( $oms->title == 'H15' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2536,7 +2536,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '25')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2559,7 +2559,7 @@
             
             	  @if( $oms->title == 'E15' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2581,7 +2581,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '25' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2603,7 +2603,7 @@
             
             	  @if( $oms->category == 'CB' && $oms->row == '25' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2625,7 +2625,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '25' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2647,7 +2647,7 @@
             
             	  @if( $oms->title == 'H16' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2668,7 +2668,7 @@
             
             	  @if( $oms->category == 'GF' && $oms->row == '26')
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2691,7 +2691,7 @@
             
             	  @if( $oms->title == 'E16' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
@@ -2713,7 +2713,7 @@
             
             	  @if( $oms->category == 'LD' && $oms->row == '26' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2734,7 +2734,7 @@
             
             	  @if( $oms->category == 'A' && $oms->row == '26' )
 
-	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-danger border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
+	 				<td <?php if( $oms->status == 'Paid'){ echo "class='bg-success border border-light' data-toggle='tooltip' title='Claimed!'"; } else if( $oms->status == 'Pending'){ echo "class='bg-warning border border-light' data-toggle='tooltip' title='Pending Registration!'"; } else { echo "class='bg-success border border-light'"; }  ?> >
 	 					<a onclick="return confirm('Are you sure?')" <?php if( $oms->status == 'Paid' || $oms->status == 'Pending'){ echo "class='disabled text-light'"; } else {echo "class='text-dark'";}  ?> href="{{route('get_space', ['id' => $oms->id ])}}">
 
 	 						{!! $oms->title !!} <br>
@@ -2751,7 +2751,8 @@
 	 		
 	 	</table>
 
-	 	</div> 		
+	 	</div> 	
+	 	</center>	
 
 	 </div>
 

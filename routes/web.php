@@ -39,12 +39,22 @@ Route::post('/registering', [
     'as' => 'register', 'uses' => '\App\Http\Controllers\Auth\RegisterController@register'
 ]);
 
+Route::get('/sendemail/send', 'SendEmailController@send');
+
 Route::get('/registration', [
     'as' => 'reg', 'uses' => '\App\Http\Controllers\BluePrintController@index'
 ]);
 
 Route::get('/registration/form', [
     'as' => 'reg', 'uses' => '\App\Http\Controllers\BluePrintController@form'
+]);
+
+Route::get('/submit/form/', [
+    'as' => 'form-submission', 'uses' => '\App\Http\Controllers\BluePrintController@submission'
+]);
+
+Route::post('/submit/form/', [
+    'as' => 'checkout.store', 'uses' => '\App\Http\Controllers\CheckOutController@store'
 ]);
 
 Route::get('/get/space/{id}', [
@@ -61,6 +71,21 @@ Route::get('/register/login', function () {
 
 Route::get('/', function () {
     return view('auth/login');
+});
+
+Route::get('/ticket', function () {
+    $pdf = PDF::loadView('ticket'); //load view page
+        return $pdf->download('ticket.pdf');
+});
+
+Route::get('/dynamic_pdf', 'DynamicPDFController@index');
+
+Route::get('/dynamic_pdf/pdf', 'DynamicPDFController@pdf');
+
+Route::get('qrCode', function () {
+    
+  return view('ticket');
+    
 });
 
 
